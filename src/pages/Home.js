@@ -16,14 +16,15 @@ function Home() {
         </div>
       </div>
       <div className="skills">
-        <h2> Informasjon </h2>
+        {/* <h2> Informasjon </h2> */}
         <ol className="list">
           <li className="item">
-            <h2>Her er noe informasjon.</h2>
+            <h2>---</h2>
             <span>HTML, CSS, ReactJS</span>
           </li>
           {/* content */}
         </ol>
+        <div>Heisann</div>
       </div>
     </div>
   );
