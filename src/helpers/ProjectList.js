@@ -4,16 +4,19 @@ import Proj3 from "../assets/proj3.png";
 
 export const ProjectList = [
   {
+    id: 1,
     name: "Hjemmekino / Home Cinema",
     image: Proj2,
-    skills: "ReactJS, HTML, CSS, Typescript(?)",
+    skills: "JS, (ReactJS), HTML, CSS, Typescript",
   },
   {
+    id: 2,
     name: "FengselDB",
     image: Proj3,
-    skills: "... ReactJS, HTML, CSS, Typescript",
+    skills: "JS, (ReactJS), HTML, CSS, Typescript",
   },
   {
+    id: 3,
     name: "WordGuesser",
     image: Proj1,
     skills: "Javascript, HTML, CSS",

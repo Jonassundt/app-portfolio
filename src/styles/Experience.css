@@ -1,0 +1,23 @@
+.experience {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: monospace;
+  font-size: 30px;
+  background-color: #f0f0f0;
+  /* background: linear-gradient(#21325e, #f0f0f0); */
+  color: rgb(0, 0, 0);
+}
+
+.mini-container {
+  justify-content: left;
+}
+
+@media only screen and (max-width: 600px) {
+  .experience {
+    font-size: 20px;
+  }
+}

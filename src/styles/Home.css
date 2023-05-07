@@ -1,7 +1,8 @@
 .home {
   width: 100%;
   align-items: center;
-  font-family: "Arial", sans-serif;
+  /* font-family: "Arial", sans-serif; */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: #3e497a;
 }
 
@@ -23,7 +24,9 @@
   color: #e9d35b;
   height: 50px;
 }
-
+.pointer {
+  cursor: pointer;
+}
 .about .prompt {
   width: 40%;
   font-size: 30px;
@@ -35,7 +38,8 @@
 }
 
 .skills {
-  font-size: 35px;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -56,15 +60,25 @@
   font-size: 20px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 850px) {
   .about h2 {
     font-size: 40px;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+  .first,
+  .second {
+    color: rgb(7, 0, 138);
+    font-size: 20px;
+    width: 100%;
   }
 
   .about .prompt {
     margin-top: 10px;
     font-size: 20px;
-    width: 80%;
+    width: 100%;
   }
 
   .skills {
@@ -77,4 +91,45 @@
   .skills h2 {
     font-size: 30px;
   }
+}
+
+.wrapper {
+  width: 50%;
+  display: flex;
+}
+
+.first {
+  /* border: 1px solid blue; */
+
+  width: 50%;
+  text-align: left;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second {
+  /* border: 1px solid blue; */
+  width: 50%;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1300px) {
+  .wrapper {
+    flex-wrap: wrap;
+  }
+  .first,
+  .second {
+    width: 100%;
+  }
+}
+
+.profilePicture {
+  width: 50%;
+  height: auto;
 }
