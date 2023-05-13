@@ -11,7 +11,7 @@ function ProjectDisplay() {
   function handleClick() {
     console.log(project.id);
     if (project.id === 3) {
-      window.open("https://jonassundt.github.io/wordguesserapp/", "_blank");
+      window.open("https://jonassundt.github.io/WordQuiz/", "_blank");
     } else if (project.id === 1) {
       window.open("https://jonassundt.github.io/cinema/", "_blank");
     } else {
