@@ -13,7 +13,7 @@ function Home() {
         <h2>Velkommen!</h2>
         <div className="prompt">
           {" "}
-          <p> Jeg håper du finner noe du liker.</p>
+          <p> finnes det noe artig her da mon tro? ...</p>
           <LinkedInIcon
             className="pointer"
             onClick={() =>

@@ -13,12 +13,12 @@ export const ProjectList = [
     id: 2,
     name: "FengselDB",
     image: Proj3,
-    skills: "JS, (ReactJS), HTML, CSS, Typescript",
+    skills: "MongoDB, Express, ReactJS, Node",
   },
   {
     id: 3,
     name: "WordGuesser",
     image: Proj1,
-    skills: "Javascript, HTML, CSS",
+    skills: "ReactJS, JS, HTML, CSS, MaterialUI",
   },
 ];

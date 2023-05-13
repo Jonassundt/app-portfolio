@@ -23,6 +23,7 @@ function ProjectDisplay() {
     <div className="project">
       <h1>{project.name}</h1>
       <img
+        alt=""
         className="pointer"
         src={project.image}
         onClick={() => {
