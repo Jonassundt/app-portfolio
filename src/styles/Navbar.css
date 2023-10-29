@@ -32,6 +32,7 @@
 .toggleButton svg {
   font-size: 50px;
 }
+
 .toggleButton button {
   margin-right: 20px;
   background-color: transparent;
@@ -55,12 +56,6 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 900px) {
-  .navbar a {
-    width: 70px;
-  }
-}
-
 @media only screen and (max-width: 600px) {
   .toggleButton {
     display: flex;
@@ -74,15 +69,12 @@
   .toggleButton {
     display: none;
   }
-
   .hiddenLinks {
     display: none;
   }
-
   #open {
     height: 100px;
   }
-
   #open .links {
     flex-direction: row;
   }

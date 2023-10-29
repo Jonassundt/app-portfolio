@@ -9,27 +9,22 @@ function ProjectDisplay() {
   const project = ProjectList[id];
 
   function handleClick() {
-    console.log(project.id);
-    if (project.id === 3) {
-      window.open("https://jonassundt.github.io/WordQuiz/", "_blank");
-    } else if (project.id === 1) {
-      window.open("https://jonassundt.github.io/cinema/", "_blank");
+    if (!project.website) {
+      alert("I apologize, not available at the moment.");
     } else {
-      //pass
+      window.open(project.website, "_blank");
     }
   }
 
   return (
     <div className="project">
       <h1>{project.name}</h1>
-      <img
-        alt=""
-        className="pointer"
-        src={project.image}
-        onClick={() => {
-          handleClick(project.id);
-        }}
-      />
+      <div className="imageContainer" onClick={() => handleClick()}>
+        <img alt="" className="projectImage" src={project.image} />
+        <div className="overlay">
+          <h2 className="viewText">VIEW</h2>
+        </div>
+      </div>
       <p>
         <b>Tech: </b> {project.skills}
       </p>

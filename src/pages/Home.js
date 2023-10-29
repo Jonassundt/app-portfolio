@@ -13,7 +13,8 @@ function Home() {
         <h2>Velkommen!</h2>
         <div className="prompt">
           {" "}
-          <p> finnes det noe artig her da mon tro? ...</p>
+          {/* <p> finnes det noe artig her da mon tro? ...</p> */}
+          <p>. . .</p>
           <LinkedInIcon
             className="pointer"
             onClick={() =>
@@ -37,15 +38,15 @@ function Home() {
       </div>
       <div className="skills">
         {/* <h2> Informasjon </h2> */}
-        <h2>Oversikt</h2>
+        <h2>. . .</h2>
         <div className="wrapper">
           <p className="info-text first">
             Heisann! Jeg heter Jonas og studerer Datateknologi på NTNU, der jeg
             skriver masteroppgave innen Kunstig Intelligens.
             Utvekslingsoppholdet mitt i 4. klasse ble brukt på å studere
-            AI-relaterte fag på Technische Universität Berlin. Jeg har jobbet
-            ved siden av studiene mine på et bo-og-behandlingshjem i
-            Holmestrand. Teknologi inspirerer meg, og jeg lurer spent på hvordan
+            AI-relaterte fag på Technische Universität Berlin. Ved siden av
+            masteroppgaven, jobber jeg deltid for NorwAI på NTNU.
+            Teknologi inspirerer meg, og jeg er spent på hvordan
             det vil forme fremtiden vår. Under «Prosjekter» kan du ta en titt på
             noe arbeid som er gjort i forbindelse med skole og annet.
           </p>
@@ -56,6 +57,7 @@ function Home() {
               className="profilePicture"
               src={ProfilePicture}
               height={"50%"}
+              alt='profilePicture'
             />
           </div>
         </div>

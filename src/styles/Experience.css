@@ -9,7 +9,9 @@
   font-size: 30px;
   background-color: #f0f0f0;
   /* background: linear-gradient(#21325e, #f0f0f0); */
-  color: rgb(0, 0, 0);
+  color: rgb(245, 245, 245);
+  background-color: #3e497a;
+  height:70vh;
 }
 
 .mini-container {
