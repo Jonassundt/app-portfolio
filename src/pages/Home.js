@@ -13,7 +13,6 @@ function Home() {
         <h2>Velkommen!</h2>
         <div className="prompt">
           {" "}
-          {/* <p> finnes det noe artig her da mon tro? ...</p> */}
           <p>. . .</p>
           <LinkedInIcon
             className="pointer"

@@ -52,7 +52,6 @@
 }
 
 .skills h1 {
-  /* color: #3e497a; */
   color: #a2a2a2;
 }
 
@@ -75,7 +74,6 @@
   }
   .first,
   .second {
-    /* color: rgb(7, 0, 138); */
     font-size: 20px;
     width: 100%;
   }
@@ -114,7 +112,6 @@
 }
 
 .second {
-  /* border: 1px solid blue; */
   width: 50%;
   text-align: center;
 
