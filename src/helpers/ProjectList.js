@@ -28,12 +28,12 @@ export const ProjectList = [
     skills: ['mongodb', 'express', 'react', 'node'],
     // githublink: '',
   },
-  {
-    id: 3,
-    name: "WordGuesser",
-    image: Proj1,
-    skills: ['javascript', 'html', 'css'],
-    website: 'https://jonassundt.github.io/WordQuiz/',
-    // githublink: '',
-  },
+  // {
+  //   id: 3,
+  //   name: "WordGuesser",
+  //   image: Proj1,
+  //   skills: ['javascript', 'html', 'css'],
+  //   website: 'https://jonassundt.github.io/WordQuiz/',
+  //   // githublink: '',
+  // },
 ];
