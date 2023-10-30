@@ -32,7 +32,7 @@ function ProjectDisplay() {
     'express': <SiExpress size={40} color="black" />,
     'react': <SiReact size={40} color="blue" />,
     'node': <SiNodedotjs size={40} color="green" />,
-    'typescript': <SiTypescript size={40} />,
+    'typescript': <SiTypescript size={40} color='blue'/>,
     'javascript': <SiJavascript size={40} />,
     'html': <SiHtml5 size={40} />,
     'css': <SiCss3 size={40} />
@@ -49,7 +49,7 @@ function ProjectDisplay() {
 
   return (
     <div className="project">
-      <h1>{project.name}</h1>
+      <h1 className='project_header'>{project.name}</h1>
       <div className="imageContainer" onClick={() => handleClick()}>
         <img alt="" className="projectImage" src={project.image} />
         <div className="overlay">
