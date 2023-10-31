@@ -33,9 +33,9 @@ function ProjectDisplay() {
     'react': <SiReact size={40} color="blue" />,
     'node': <SiNodedotjs size={40} color="green" />,
     'typescript': <SiTypescript size={40} color='blue'/>,
-    'javascript': <SiJavascript size={40} />,
-    'html': <SiHtml5 size={40} />,
-    'css': <SiCss3 size={40} />
+    'javascript': <SiJavascript size={40} color='yellow' />,
+    'html': <SiHtml5 size={40} color='white'/>,
+    'css': <SiCss3 size={40} color='white'/>
   }
 
   let technologiesUsed = project.skills.map(skill =>
@@ -44,8 +44,6 @@ function ProjectDisplay() {
     </div>
 
   )
-
-
 
   return (
     <div className="project">
