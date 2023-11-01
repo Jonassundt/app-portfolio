@@ -3,6 +3,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import ProfilePicture from "../assets/person.jpg";
+import Phototransition from '../components/Phototransition'
 
 import "../styles/Home.css";
 
@@ -33,6 +34,7 @@ function Home() {
               window.open("https://www.github.com/jonassundt/", "_blank")
             }
           />
+          
         </div>
       </div>
       <div className="skills">
@@ -52,12 +54,7 @@ function Home() {
 
           {/* <p className="second">my photo</p> */}
           <div className="second">
-            <img
-              className="profilePicture"
-              src={ProfilePicture}
-              height={"50%"}
-              alt='profilePicture'
-            />
+              <Phototransition className='profilePicture'/>
           </div>
         </div>
       </div>
