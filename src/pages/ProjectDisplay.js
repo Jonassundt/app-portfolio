@@ -32,10 +32,10 @@ function ProjectDisplay() {
     'express': <SiExpress size={40} color="black" />,
     'react': <SiReact size={40} color="blue" />,
     'node': <SiNodedotjs size={40} color="green" />,
-    'typescript': <SiTypescript size={40} color='blue'/>,
+    'typescript': <SiTypescript size={40} color='blue' />,
     'javascript': <SiJavascript size={40} color='yellow' />,
-    'html': <SiHtml5 size={40} color='white'/>,
-    'css': <SiCss3 size={40} color='white'/>
+    'html': <SiHtml5 size={40} color='white' />,
+    'css': <SiCss3 size={40} color='white' />
   }
 
   let technologiesUsed = project.skills.map(skill =>
@@ -48,10 +48,12 @@ function ProjectDisplay() {
   return (
     <div className="project">
       <h1 className='project_header'>{project.name}</h1>
-      <div className="imageContainer" onClick={() => handleClick()}>
-        <img alt="" className="projectImage" src={project.image} />
-        <div className="overlay">
-          <h2 className="viewText">VIEW</h2>
+      <div className="imageContainer">
+        <div className="innerContainer" onClick={() => handleClick()}>
+          <img alt="" className="projectImage" src={project.image} />
+          <div className="overlay">
+            <h2 className="viewText">VIEW</h2>
+          </div>
         </div>
       </div>
       <div className='technologiesUsed'>

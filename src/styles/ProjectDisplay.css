@@ -40,6 +40,18 @@
   position: relative;
   overflow: hidden;
   border-radius: 10px;
+  /* border: 1px solid white; */
+}
+
+.innerContainer {
+  /* border: 1px solid white; */
+  border-radius: 10px;
+  transition: transform 0.2s;
+  overflow: hidden;
+}
+
+.imageContainer:hover .innerContainer {
+  transform: scale(1.5);
 }
 
 .projectImage {

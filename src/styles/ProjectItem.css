@@ -12,6 +12,8 @@
 
 .imageContainer {
   position: relative;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .bgImage {
