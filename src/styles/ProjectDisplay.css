@@ -129,3 +129,43 @@
   transform: scale(1.5);
   transition: transform 0.2s;
 }
+
+@media screen and (max-width: 550px) {
+  .project {
+    /* height: auto; */
+    /* width:80%; */
+    /* padding: 20px 20px; */
+  }
+
+  .project h1 {
+    font-size: 30px;
+    margin-top: 20px;
+    padding: 0 10%;
+  }
+
+  .project img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .projectImage {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .imageContainer{
+    width:80%;
+  }
+
+  .overlay h2 {
+    font-size: 30px;
+  }
+
+  .technologyIcon {
+    margin: 10px;
+  }
+
+  .githubIcon {
+    margin: 10px;
+  }
+}

@@ -85,7 +85,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 48%;  /* Adjusted to allow some space between text and image */
+  width: 48%;
 }
 
 .first {
@@ -114,7 +114,6 @@
 
   .about h2{
     font-size: 40px;
-
   }
 }
 

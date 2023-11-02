@@ -14,10 +14,14 @@
 }
 
 .mini-container {
-  justify-content: left;
+  justify-content: center;
 }
 
-@media only screen and (max-width: 600px) {
+.content-container{
+  width:80%;
+}
+
+@media only screen and (max-width: 700px) {
   .experience {
     font-size: 20px;
   }
