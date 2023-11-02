@@ -137,6 +137,10 @@
     /* padding: 20px 20px; */
   }
 
+  .new-container{
+    width:80%;
+  }
+
   .project h1 {
     font-size: 30px;
     margin-top: 20px;
@@ -153,16 +157,12 @@
     height: auto;
   }
 
-  .imageContainer{
-    width:80%;
-  }
-
   .overlay h2 {
     font-size: 30px;
   }
 
   .technologyIcon {
-    margin: 10px;
+    margin: 20px;
   }
 
   .githubIcon {

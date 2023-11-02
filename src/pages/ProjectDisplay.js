@@ -47,12 +47,14 @@ function ProjectDisplay() {
 
   return (
     <div className="project">
-      <h1 className='project_header'>{project.name}</h1>
-      <div className="imageContainer">
-        <div className="innerContainer" onClick={() => handleClick()}>
-          <img alt="" className="projectImage" src={project.image} />
-          <div className="overlay">
-            <h2 className="viewText">VIEW</h2>
+      <div className='new-container'>
+        <h1 className='project_header'>{project.name}</h1>
+        <div className="imageContainer">
+          <div className="innerContainer" onClick={() => handleClick()}>
+            <img alt="" className="projectImage" src={project.image} />
+            <div className="overlay">
+              <h2 className="viewText">VIEW</h2>
+            </div>
           </div>
         </div>
       </div>
@@ -65,7 +67,6 @@ function ProjectDisplay() {
         </div>)
         :
         ''}
-
     </div>
   );
 }
