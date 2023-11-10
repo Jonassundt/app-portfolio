@@ -9,7 +9,7 @@ export const ProjectList = [
     id: 4,
     name: "GreyRock",
     image: projGreyRock,
-    skills: ['mongodb', 'express', 'react', 'node'],
+    skills: ['mongodb', 'express', 'react', 'node', 'redux'],
     website: 'https://greyrock.onrender.com/',
     githublink: 'https://github.com/Jonassundt/GreyRock',
   },

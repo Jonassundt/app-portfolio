@@ -4,7 +4,7 @@ import { ProjectList } from "../helpers/ProjectList";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import "../styles/ProjectDisplay.css";
 
-import { SiMongodb, SiExpress, SiReact, SiNodedotjs, SiTypescript, SiJavascript, SiHtml5, SiCss3 } from 'react-icons/si';
+import { SiMongodb, SiExpress, SiReact, SiNodedotjs, SiTypescript, SiJavascript, SiHtml5, SiCss3, SiRedux } from 'react-icons/si';
 
 function ProjectDisplay() {
   const { id } = useParams();
@@ -30,12 +30,13 @@ function ProjectDisplay() {
   const text_to_icons = {
     'mongodb': <SiMongodb size={40} color="green" />,
     'express': <SiExpress size={40} color="black" />,
-    'react': <SiReact size={40} color="blue" />,
+    'react': <SiReact size={40} color="lightblue" />,
     'node': <SiNodedotjs size={40} color="green" />,
-    'typescript': <SiTypescript size={40} color='blue' />,
+    'typescript': <SiTypescript size={40} color='lightblue' />,
     'javascript': <SiJavascript size={40} color='yellow' />,
     'html': <SiHtml5 size={40} color='white' />,
-    'css': <SiCss3 size={40} color='white' />
+    'css': <SiCss3 size={40} color='white' />,
+    'redux': <SiRedux size={40} color='purple' />
   }
 
   let technologiesUsed = project.skills.map(skill =>
