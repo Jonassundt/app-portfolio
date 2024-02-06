@@ -14,9 +14,6 @@ function Experience() {
           </p>
           </div>
           <p>
-            <b>Mobilnummer</b> +47 91003394
-        </p>
-          <p>
             <b>Adresse</b> Trondheim/Oslo/Berlin
         </p>
           <p>

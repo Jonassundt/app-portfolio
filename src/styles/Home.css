@@ -21,7 +21,9 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(#21325e, rgb(1, 85, 196), #3e497a);
+  /* background-image: linear-gradient(#21325e, rgb(1, 85, 196), #3e497a); */
+  background-image: linear-gradient(#21325e, rgb(116, 122, 130), #3e497a);
+
   color: #f0f0f0;
 }
 
@@ -116,38 +118,3 @@
     font-size: 40px;
   }
 }
-
-
-/* Mobile Styles */
-/* @media only screen and (max-width: 850px) {
-  .wrapper {
-    flex-direction: column-reverse;
-  }
-
-  .first,
-  .second {
-    width: 100%; 
-  }
-
-  .first,
-  .second {
-    font-size: 20px;
-  }
-
-  .about .prompt {
-    margin-top: 10px;
-    font-size: 20px;
-  }
-
-  .skills {
-    text-align: center;
-  }
-
-  .skills h2 {
-    font-size: 30px;
-  }
-
-  .wrapper {
-    flex-direction: column;
-  }
-} */
