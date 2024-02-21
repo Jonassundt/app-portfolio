@@ -42,7 +42,7 @@ function Home() {
         <div className="wrapper">
 
           <p className="info-text first">
-            Heisann! Jeg heter Jonas og er nettopp ferdigutdannet på Datateknologi ved NTNU Trondheim,
+            Hei! Jeg heter Jonas og er nettopp ferdigutdannet på Datateknologi ved NTNU Trondheim,
             der jeg skrev masteroppgave innen Kunstig Intelligens. Ved siden av studiet har jeg jobbet ved
             NorwAI som forskningsassistent,
             både i sommerjobb og deltidsjobb ved siden av studiet.
