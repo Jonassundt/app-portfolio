@@ -1,0 +1,50 @@
+/* ButtonFrost.css */
+.button-frost {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem; /* gap-2 */
+    padding: 0.625rem 1rem; /* px-4, py-2.5 */
+    /* border-radius: 0.75rem; */
+    border-radius: 0.5rem;
+    font-size: 1rem; /* font-medium */
+    font-weight: 500; /* font-medium */
+    white-space: nowrap; /* whitespace-nowrap */
+    appearance: none; /* appearance-none */
+    user-select: none; /* select-none */
+    cursor: pointer; /* clickable */
+    width: 100%; 
+    /* w-full */
+    margin-top: 1.25rem; /* mt-5 */
+  
+    color: #3bd0d8;
+
+  
+    /* Frosted glass effect */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-color: #58f3cc88;
+  
+    /* Coloring - Using custom properties for gradient colors */
+    --bg-board-color: rgba(59, 208, 216, 0.2); 
+    --bg-board-color-2: rgba(59, 208, 216, 0); 
+    
+    /* Gradient background */
+    background: linear-gradient(
+      162deg, 
+      var(--bg-board-color) 28.7%, 
+      var(--bg-board-color-2, var(--bg-board-color))
+    );
+}
+  
+  /* Hover effect */
+  .button-frost:hover {
+    filter: brightness(1.1);
+  }
+  
+  /* Mobile specific styles */
+  @media (max-width: 640px) { /* Adjust max-width as per your breakpoint for 'mobile' */
+    .button-frost {
+      border-radius: 0.5rem;
+    }
+  }

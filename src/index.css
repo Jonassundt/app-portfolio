@@ -1,0 +1,198 @@
+/* Define the colors and fonts */
+:root {
+  --bg-color: #0c0927; 
+  /* Dark background */
+  /* background-image: linear-gradient(to right, #0c0927, #131A35); */
+  --container-bg-color: rgba(255, 255, 255, 0.1); /* Translucent white for the container background */
+  /* --container-border-color: rgba(255, 255, 255, 0.25);  */
+  /* Adjusted for visible border glow */
+  --inner-bg-color: #2a2f45; /* New variable for the inner background color */
+  --accent-color: #e0e0e0; /* Light grey for text */
+  --primary-color: #c77dff; /* Neon purple for accents */
+  --secondary-color: #89cff0; /* Light blue for secondary accents */
+  --font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --border-glow: rgba(140, 155, 254, 0.5); 
+}
+
+/* Apply a global style */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--accent-color);
+  font-family: var(--font-family);
+}
+
+/* Utilize a container with a gradient border and inner glow */
+.container {
+  width: min(456px, 100%);
+  /* margin: 50px; */
+  margin: 50px auto;
+  border-radius: 21.2px; /* 21.2px */
+  padding: 1.2px; /* This padding creates the space for the gradient border */
+  background-image: linear-gradient(
+    246deg,
+    #da2eef 7.97%,
+    #2b6aff 49.17%,
+    #39d0d8 92.1%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* box-shadow:
+    0 0 10px rgba(140, 155, 254, 0.5),
+    0 0 20px rgba(140, 155, 254, 0.7),
+    0 0 40px rgba(140, 155, 254, 0.9),
+    0 0 80px rgba(140, 155, 254, 1); */
+    /* Glow effect */
+    box-shadow:
+    0 0 8px rgba(140, 155, 254, 0.1),
+    0 0 16px rgba(140, 155, 254, 0.1),
+    0 0 24px rgba(140, 155, 254, 0.1),
+    0 0 32px rgba(140, 155, 254, 0.1); 
+}
+
+/* Pink blur on the right */
+.container::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  bottom: 15px;
+  width: 60%;
+  border-radius: 50%;
+  background-color: #e300ff;
+  box-shadow: 0 0 140px 50px #e300ffaa;
+  opacity: .2;
+  /* opacity: .99; */
+  mix-blend-mode: hard-light;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Blue blur on the left */
+.container::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  bottom: 15px;
+  width: 60%;
+  border-radius: 50%;
+  background-color: #39d0d8;
+  box-shadow: 0 0 140px 50px #39d0d8aa;
+  opacity: .2;
+  /* opacity: .4; */
+  mix-blend-mode: hard-light;
+  pointer-events: none;
+  z-index: -1;
+}
+
+
+.inner-container {
+  border-radius: 21.2px;
+  background-image:
+    linear-gradient(140.14deg, rgba(0, 182, 191, 0.15), rgba(27, 22, 89, 0.1) 86.61%),
+    linear-gradient(321.82deg, #18134d, #1b1659);
+  height: 100%;
+  width: 100%;
+  padding: 32px;
+  backdrop-filter: blur(10px);
+}
+
+.phototransition-container {
+  display: flex;
+  justify-content: center; /* Horizontally centers the child in the container */
+  align-items: center; /* Vertically centers the child in the container */
+  height: 100%; /* Ensure the container has a height, or set to a specific value */
+}
+
+.tech-block {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background: var(--container-bg-color);
+  transition: transform 0.3s ease;
+}
+
+.tech-block:hover {
+  transform: translateY(-5px);
+  background: var(--primary-color);
+  color: var(--bg-color);
+}
+
+/* Style for project blocks */
+.project-block {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.project-block:hover {
+  transform: translateY(-5px);
+  background: var(--secondary-color);
+  color: var(--bg-color);
+}
+
+/* Footer links */
+.footer {
+  text-align: center;
+  padding: 20px;
+}
+
+.footer a {
+  color: var(--primary-color);
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: var(--secondary-color);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; 
+  padding: 10px 16px; 
+  border-radius: 12px; 
+  font-size: 1rem; 
+  font-weight: 1000;
+  white-space: nowrap;
+  background-color: #22d3ee;
+  color: #1e293b; 
+  user-select: none;
+  appearance: none;
+  width: 100%;
+  margin-top: 20px; 
+  transition: filter 0.3s; 
+}
+
+
+.button:hover {
+  filter: brightness(1.1);
+}
+
+
+.button.frosted-glass-teal {
+  background: rgba(32, 202, 172, 0.8); 
+  backdrop-filter: blur(10px); 
+  border: 1px solid rgba(255, 255, 255, 0.25); 
+}
+
+.footer {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 10px; 
+  height: 60px;
+}
+
