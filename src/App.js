@@ -11,6 +11,8 @@ function App() {
 
     return (
         <div className="App">
+            <Analytics/>
+            <SpeedInsights/>
             <TopHeader />
             <About />
             <Technologies />
