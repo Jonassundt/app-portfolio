@@ -4,6 +4,7 @@ import Technologies from './components/Technologies';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import TopHeader from './components/TopHeader';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
 
