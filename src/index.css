@@ -26,8 +26,9 @@ body {
 /* Utilize a container with a gradient border and inner glow */
 .container {
   width: min(456px, 100%);
-  /* margin: 50px; */
   margin: 50px auto;
+  
+
   border-radius: 21.2px; /* 21.2px */
   padding: 1.2px; /* This padding creates the space for the gradient border */
   background-image: linear-gradient(
@@ -40,17 +41,11 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  /* box-shadow:
-    0 0 10px rgba(140, 155, 254, 0.5),
-    0 0 20px rgba(140, 155, 254, 0.7),
-    0 0 40px rgba(140, 155, 254, 0.9),
-    0 0 80px rgba(140, 155, 254, 1); */
-    /* Glow effect */
-    box-shadow:
-    0 0 8px rgba(140, 155, 254, 0.1),
-    0 0 16px rgba(140, 155, 254, 0.1),
-    0 0 24px rgba(140, 155, 254, 0.1),
-    0 0 32px rgba(140, 155, 254, 0.1); 
+  box-shadow:
+  0 0 8px rgba(140, 155, 254, 0.1),
+  0 0 16px rgba(140, 155, 254, 0.1),
+  0 0 24px rgba(140, 155, 254, 0.1),
+  0 0 32px rgba(140, 155, 254, 0.1); 
 }
 
 /* Pink blur on the right */
@@ -195,4 +190,52 @@ body {
   padding: 10px; 
   height: 60px;
 }
+
+/* for NorwAI and NTNU logo */
+.logos-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+  margin-top: 20px; 
+}
+
+.logo {
+  width: auto; /* Adjust as needed */
+  height: 100px; /* Maintains aspect ratio */
+}
+
+.logo:hover{
+  cursor: pointer;
+}
+
+.logo-norwai {
+}
+
+.logo-ntnu {
+  border: 5px solid white;
+  border-radius: 10px;
+  background-color: white;
+}
+
+
+@media (min-width: 300px) and (max-width: 400px) {
+  .container {
+    
+    margin: 20px 10px 50px 10px;
+    width: calc(100% - 20px); 
+  }
+
+  .inner-container{
+    width: calc(100% );
+    padding: 20px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+  .container {
+    margin: 20px 10px 50px 10px;
+    width: calc(100% - 20px);
+  }
+}
+
 
