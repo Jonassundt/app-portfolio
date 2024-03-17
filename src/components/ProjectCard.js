@@ -1,15 +1,15 @@
 import React from 'react';
 import './ProjectCard.css';
 
-const ProjectCard = ({ projectName, imageUrl, imgLink }) => {
+const ProjectCard = ({ projectName, imageUrl, imgLink, technologies }) => {
 
-    function handleClick() {
-        if (!imgLink || (imgLink === "")) {
-          alert("Demo er ikke tilgjengelig for øyeblikket.");
-        } else {
-          window.open(imgLink, "_blank");
-        }
-      }
+  function handleClick() {
+    if (!imgLink || (imgLink === "")) {
+      alert("Demo er ikke tilgjengelig for øyeblikket.");
+    } else {
+      window.open(imgLink, "_blank");
+    }
+  }
 
 
   return (

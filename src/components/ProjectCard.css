@@ -4,9 +4,10 @@
 
 .project-card {
     position: relative;
-    width: 50%;
+    /* width: 50%; */
+    min-width: 200px;
     height: 100px;
-    margin: auto;
+    /* margin: auto; */
 
     background-size: cover;
     background-position: center;
@@ -51,3 +52,4 @@
 .project-card:hover h3 {
     transform: scale(1.1);
 }
+
