@@ -1,7 +1,7 @@
 import React from 'react'
 import Techblock from './Techblock';
 
-const technologies = ["JavaScript", "C#", ".NET", "HTML", "CSS", "ReactJS", "MongoDB", "ExpressJS", "NodeJS", "Redux", "TypeScript"];
+const technologies = ["JavaScript", "C#", ".NET", "Python", "HTML", "CSS", "ReactJS", "MongoDB", "ExpressJS", "NodeJS", "Redux", "TypeScript"];
 
 
 const Technologies = () => {
