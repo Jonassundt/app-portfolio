@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { FaNodeJs, FaReact} from 'react-icons/fa'; // Import other icons as needed
-import { SiMongodb, SiExpress, SiRedux, SiTypescript, SiHtml5, SiCss3, SiPython} from 'react-icons/si';
+import { SiMongodb, SiExpress, SiRedux, SiTypescript, SiHtml5, SiCss3, SiPython, SiJavascript} from 'react-icons/si';
 
 const technologyIcons = {
     'node': <FaNodeJs size={40} color='green'/>,
@@ -9,6 +9,7 @@ const technologyIcons = {
     'mongodb': <SiMongodb size={40} color='green'/>,
     'expressjs': <SiExpress size={40}/>,
     'typescript': <SiTypescript size={40} color='#409fd6'/>,
+    'javascript': <SiJavascript size={40} color='yellow'/>,
     'html': <SiHtml5 size={40} color='orange'/>,
     'css': <SiCss3 size={40} color='#1b98e0'/>,
     'redux': <SiRedux size={40} color='purple'/>,
