@@ -13,17 +13,17 @@ export const About = () => {
                     <PhotoTransition height="300px" width="300px" />
                 </div>
                 <h2>Om</h2>
-                <h4>Jeg heter Jonas og er nettopp ferdigutdannet på Datateknologi ved NTNU Trondheim,
-                    der jeg skrev masteroppgave innen Kunstig Intelligens. Ved siden av studiet har
-                    jeg jobbet ved NorwAI som forskningsassistent, både i sommerjobb og deltidsjobb
-                    ved siden av studiet.</h4>
-                
+                <p>Jeg heter Jonas og er nettopp ferdigutdannet på Datateknologi ved NTNU Trondheim,
+                    der jeg skrev masteroppgave innen Kunstig Intelligens med fokus på bruk av kunnskapsgrafer innen norsk finans. Ved siden av studiet har
+                    jeg jobbet ved NorwAI som forskningsassistent, både i sommerjobb og deltidsjobb.
+                </p>
+
                 {/* Logos container */}
                 <div className='logos-container'>
-                    <img src={logoNORWAI} alt="NorwAI Logo" className="logo logo-norwai" onClick={() => window.open("https://www.ntnu.edu/norwai", "_blank")}/>
-                    <img src={logoNTNU} alt="NTNU Logo" className="logo logo-ntnu" onClick={() => window.open("https://www.ntnu.no/", "_blank")}/>
+                    <img src={logoNORWAI} alt="NorwAI Logo" className="logo logo-norwai" onClick={() => window.open("https://www.ntnu.edu/norwai", "_blank")} />
+                    <img src={logoNTNU} alt="NTNU Logo" className="logo logo-ntnu" onClick={() => window.open("https://www.ntnu.no/", "_blank")} />
                 </div>
-                
+
                 <ButtonFrost onClick={() => alert("Send epost til jonassundt98@gmail.com")}>KONTAKT</ButtonFrost>
 
 
