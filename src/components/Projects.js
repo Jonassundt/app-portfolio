@@ -23,7 +23,7 @@ const Projects = () => {
     return (
         <div className='container'>
             <div className='inner-container'>
-                <h2>Tidligere prosjekter</h2>
+                <h2>Prosjekter</h2>
                 {projects.map(project =>
                     <div className='project-card-container'>
                         <ProjectCard
