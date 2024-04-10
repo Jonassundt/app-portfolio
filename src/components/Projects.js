@@ -11,7 +11,7 @@ import ProjectTechBlock from "./ProjectTechBlock";
 
 
 const projects = [
-    { name: "Wine .NET Web API", image: proj_dotNetApi, url: '', technologies: ["c#", "dotnet"] },
+    { name: "Wine .NET Web API", image: proj_dotNetApi, url: 'https://github.com/Jonassundt/WineAPI', technologies: ["c#", "dotnet"] },
     { name: "GreyRock", image: proj_greyrock, url: 'https://greyrock.onrender.com/', technologies: ["react", "mongodb", "expressjs", "node", "redux"] },
     { name: "NorwAI annotation tool", image: proj_norwai, url: "https://raw.githubusercontent.com/Jonassundt/app-portfolio/master/src/images/norwAI-textAnnotation.png", technologies: ["python"] },
     { name: "Hjemmekino", image: proj_hjemmekino, url: "https://jonassundt.github.io/cinema/", technologies: ["react", "html", "css"] },
